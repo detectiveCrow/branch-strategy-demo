@@ -14,7 +14,12 @@
   "release": {
     "branches": [
       "production",
-      {"name": "release", "prerelease": true}
+      {"name": "release", "prerelease": true},
+      {
+        "name": "v*.*.*-hotfix-*",
+        "prerelease": true,
+        "channel": "hotfix"
+      }
     ],
     "plugins": [
       "@semantic-release/commit-analyzer",
