@@ -17,8 +17,7 @@
       {"name": "release", "prerelease": true},
       {
         "name": "vx.x.x-hotfix-*",
-        "prerelease": "hotfix.${ branch.name.replace(/^vx\.(\d+\.\d+\.\d+)-hotfix-(\d{8})$/, '$1.$2') }",
-        "channel": "hotfix"
+        "prerelease": "hotfix"
       }
     ],
     "plugins": [
